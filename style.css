@@ -1,0 +1,219 @@
+
+
+body {
+    background-color: #1A181C;
+    font-family: 'Inter';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: #1A181C;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+    background-color: #1A181C;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img{
+    display: flex;
+    height: 90px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    
+
+}
+
+li{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 75px;
+    color: #4A5ADD;
+    text-align: center;
+}
+
+.imagenPrincipal {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100%;
+    margin: 25px 0px ;
+}
+
+.post img {
+    width: 400px;
+    height: auto;
+}
+
+article {
+    background-color: #4A5ADD;
+    margin: 1rem 0;
+    border-radius: 6px;
+
+}
+
+.formulario input:valid,
+.formulario textarea:valid {
+    color: white; 
+}
+
+form h2 {
+    color: #4A5ADD;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 20px;
+    
+}
+
+.formulario input {
+    display: block;
+    margin-top: 20px;
+}
+
+
+.formTitulo input , .formulario textarea{ 
+    color: #4A5ADD;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+ 
+::placeholder {
+    color: #1A181C;
+
+}
+ 
+form {
+    color: white;
+    padding: 50 px 55px;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+}
+
+.formTitulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: #4A5ADD;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 0;
+    color: white;
+
+}
+
+.boton {
+    background-color: #4A5ADD;
+
+}
+
+footer {
+    height: 140px;
+    background-color: black;
+    padding: 3rem;
+    color: white;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    background-color: black;
+}
+
+.descripcion {
+    padding: 50px;
+    text-align: center;
+    margin: 10px;
+    color: grey;
+}
+
+.nosotros {
+    color: #4A5ADD;
+    font-size: 50px;
+    text-align: center;
+}
+
+article h2 {
+    padding: 7px;
+}
+
+.post .location{
+    width: 15px;
+    height: 15px;
+}
+
+.contenedorLocation{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 5px;
+}
+
+.post p {
+    margin:8px 0 8px 0;
+}
+
+.post h2 { 
+    margin: 10px 0 10px 0;
+}
+
+.contenedorArticulos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.eslogan {
+    color: white;
+    text-align: center;
+
+}
+
+.eslogan h3{
+    font-size: 40px;
+}
