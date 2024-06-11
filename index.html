@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
     <title>UrbaHome</title>
 </head>
 <body>
@@ -28,75 +29,84 @@
     </div>
     <div>
         <h1>Nuevos proyectos a estrenar</h1>
-        
-
+    </div>
+    <div id="botones">
+        <button id="btnEuro">Euro</button>
+        <button id="btnDolar">Dólar</button>
+    </div>
         
     <div class="contenedorArticulos">
-        <article class = "post">
+        <article class="post">
             <h2>Juncal y Bulnes</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/ImagenDepartamento13.jpeg" alt="Imagen Departamento">
-            <h2>USD 760.000</h2>
+            <h2 class="precio" data-precio-usd="760000">760,000$</h2>
         </article>
-        <article class = "post">
+        <article class="post">
             <h2>Uriburu y Arenales</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Recoleta</p>
             </div>
             <img src="Imagenes/ImagenDepartamento17.jpeg" alt="Imagen Departamento">
-            <h2>USD 870.000</h2>
+            <h2 class="precio" data-precio-usd="870000">870,000$</h2>
         </article>
-        <article class = "post">
-            <h2>La pampa y Cuba</h2>
+        <article class="post">
+            <h2>La Pampa y Cuba</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Belgrano</p>
             </div>
             <img src="Imagenes/ImagenDepartamento22.jpeg" alt="Imagen Departamento">
-            <h2>USD 965.000</h2>
+            <h2 class="precio" data-precio-usd="965000">965,000$</h2>
         </article>
     </div>
     <div class="contenedorArticulos">
-        <article class = "post">
+        <article class="post">
             <h2>Juan Mora Fernandez Juez Tedin</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen09.webp" alt="Imagen Departamento">
-            <h2>USD 2.400.000</h2>
+            <h2 class="precio" data-precio-usd="2400000">2,400,000$</h2>
         </article>
-        <article class = "post">
+        <article class="post">
             <h2>Le Parc</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen04.webp" alt="Imagen Departamento">
-            <h2>USD 920.000</h2>
+            <h2 class="precio" data-precio-usd="920000">920,000$</h2>
         </article>
-        <article class = "post">
+        <article class="post">
             <h2>Juana Manso y Petrona Eyle</h2>
             <div class="contenedorLocation">
                 <img src="Iconos/iconoLocation.svg" class="location" alt="">
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen03.webp" alt="Imagen Departamento">
-            <h2>USD 265.000</h2>
+            <h2 class="precio" data-precio-usd="265000">265,000$</h2>
         </article>
     </div>
     
-
     <footer class="footer">
+        <div>
+            <p>Copyright UrbaHome 2024</p>
+            <a class="left" href="https://www.instagram.com/">Instagram</a>
+            <a class="left" href="mailto:urbahome@gmail.com">Contáctenos</a>
+        </div>
         <section>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="mailto:urbahome@gmail.com">Contactenos</a>
+            
         </section>
-        <p>Copyright 2024</p>
+        <div>
+            <p>Lima 757 - Ciudad Autónoma de Buenos Aires</p>
+            <p>(+54) 9 11 4567-3256</p>
+        </div>
     </footer>
 </body>
 </html>

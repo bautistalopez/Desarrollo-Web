@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="comprar.js"></script>
     <title>UrbaHome</title>
 </head>
 <body>
@@ -26,6 +27,10 @@
     <div>
         <h1>Para Comprar</h1>
     </div>
+    <div id="botones">
+        <button id="btnEuro">Euro</button>
+        <button id="btnDolar">Dólar</button>
+    </div>
 
     <div class="contenedorArticulos">
         <article class="post">
@@ -35,7 +40,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen00.webp" alt="Imagen de Departamento">
-            <h2>USD 1.390.000</h2>
+            <h2 class="precio" data-precio-usd="1390000">1.390.000$</h2>
         </article>
         <article class="post">
             <h2>Macacha Guemes y Juana Manso</h2>
@@ -44,7 +49,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen01.webp" alt="Imagen de Departamento">
-            <h2>USD 2.300.000</h2>
+            <h2 class="precio" data-precio-usd="2300000">2.300.000$</h2>
         </article>
         <article class="post">
             <h2>Terrazas del Yacht</h2>
@@ -53,7 +58,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen02.webp" alt="Imagen de Departamento">
-            <h2>USD 650.000</h2>
+            <h2 class="precio" data-precio-usd="650000">650.000$</h2>
         </article>
     </div>
     <div class="contenedorArticulos">
@@ -65,7 +70,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen03.webp" alt="Imagen de Departamento">
-            <h2>USD 310.000</h2>
+            <h2 class="precio" data-precio-usd="310000">310.000$</h2>
         </article>
         <article class="post">
             <h2>Le Parc</h2>
@@ -74,7 +79,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen04.webp" alt="Imagen de Departamento">
-            <h2>USD 920.000</h2>
+            <h2 class="precio" data-precio-usd="920000">920.000$</h2>
         </article>
         <article class="post">
             <h2>Alvear Tower</h2>
@@ -83,7 +88,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen05.webp" alt="Imagen de Departamento">
-            <h2>USD 1.200.000</h2>
+            <h2 class="precio" data-precio-usd="1200000">1.200.000$</h2>
         </article>
     </div>
     <div class="contenedorArticulos">
@@ -95,7 +100,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen06.webp" alt="Imagen de Departamento">
-            <h2>USD 490.000</h2>
+            <h2 class="precio" data-precio-usd="490000">490.000$</h2>
         </article>
         <article class="post">
             <h2>Juana Manso y Petrona Eyle</h2>
@@ -104,7 +109,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen07.webp" alt="Imagen de Departamento">
-            <h2>USD 480.000</h2>
+            <h2 class="precio" data-precio-usd="480000">480.000$</h2>
         </article>
         <article class="post">
             <h2>Oceana Puerto Madero</h2>
@@ -113,7 +118,7 @@
                 <p>Puerto Madero</p>
             </div>
             <img src="Imagenes/Imagen08.webp" alt="Imagen de Departamento">
-            <h2>USD 528.000</h2>
+            <h2 class="precio" data-precio-usd="528000">528.000$</h2>
         </article>
     </div>
     <div class="contenedorArticulos">
@@ -124,7 +129,7 @@
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/Imagen09.webp" alt="Imagen de Departamento">
-            <h2>USD 2.400.000</h2>
+            <h2 class="precio" data-precio-usd="2400000">2.400.000$</h2>
         </article>
         <article class="post">
             <h2>Av. Libertador y Ortiz</h2>
@@ -133,7 +138,7 @@
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/Imagen25.webp" alt="Imagen de Departamento">
-            <h2>USD 2.200.000</h2>
+            <h2 class="precio" data-precio-usd="2200000">2.200.000$</h2>
         </article>
         <article class="post">
             <h2>Sevill y Juez Tedin</h2>
@@ -142,7 +147,7 @@
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/Imagen26.webp" alt="Imagen de Departamento">
-            <h2>USD 1.390.000</h2>
+            <h2 class="precio" data-precio-usd="1390000">1.390.000$</h2>
         </article>
     </div>
     <div class="contenedorArticulos">
@@ -154,7 +159,7 @@
                 <p>Palermo Chico</p>
             </div>
             <img src="Imagenes/Imagen27.webp" alt="Imagen de Departamento">
-            <h2>USD 880.000</h2>
+            <h2 class="precio" data-precio-usd="880000">880.000$</h2>
         </article>
         <article class="post">
             <h2>Oro y Libertador</h2>
@@ -163,7 +168,7 @@
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/Imagen28.webp" alt="Imagen de Departamento">
-            <h2>USD 800.000</h2>
+            <h2 class="precio" data-precio-usd="800000">800.000$</h2>
         </article>
         <article class="post">
             <h2>Av. Libertador y Ruggieri</h2>
@@ -172,18 +177,25 @@
                 <p>Palermo</p>
             </div>
             <img src="Imagenes/Imagen29.webp" alt="Imagen de Departamento">
-            <h2>USD 955.000</h2>
+            <h2 class="precio" data-precio-usd="955000">955.000$</h2>
         </article>
     </div>
 
     
 
     <footer class="footer">
+        <div>
+            <p>Copyright UrbaHome 2024</p>
+            <a class="left" href="https://www.instagram.com/">Instagram</a>
+            <a class="left" href="mailto:urbahome@gmail.com">Contáctenos</a>
+        </div>
         <section>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="mailto:urbahome@gmail.com">Contactenos</a>
+            
         </section>
-        <p>Copyright 2024</p>
+        <div>
+            <p>Lima 757 - Ciudad Autónoma de Buenos Aires</p>
+            <p>(+54) 9 11 4567-3256</p>
+        </div>
     </footer>
 </body>
 </html>

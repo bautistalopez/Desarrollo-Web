@@ -91,18 +91,19 @@ article {
 form h2 {
     color: #4A5ADD;
     text-align: center;
-    font-size: 100px;
-    margin-top: 20px;
+    font-size: 75px;
+    margin-top: 75px;
     
 }
 
 .formulario input {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
 .formTitulo input , .formulario textarea{ 
+    font-family: Arial, sans-serif;
     color: #4A5ADD;
     margin-bottom: 10px;
     width: 90%;
@@ -119,14 +120,30 @@ form h2 {
 form {
     color: white;
     padding: 50 px 55px;
-    box-shadow: 0 0 20px;
+    box-shadow: 0 0 10px #4A5ADD;
     border-radius: 20px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.formulario .boton {
+    margin-top: 10px; 
 }
 
 .formTitulo{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+.formTitulo .boton{
+    margin-top: 10px;
+    align-items: center;
 }
 
 input, textarea{
@@ -144,20 +161,37 @@ input, textarea{
 
 }
 
-footer {
-    height: 140px;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     background-color: black;
     padding: 3rem;
     color: white;
 }
 
-footer section {
-    float: right;
+.left{
+    display: flex;
+    justify-content: left;
 }
 
-footer p {
-    background-color: black;
+.footer section {
+    text-align: right;
 }
+
+.footer section a {
+    margin-left: 10px; 
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
 
 .descripcion {
     padding: 50px;
@@ -216,4 +250,27 @@ article h2 {
 
 .eslogan h3{
     font-size: 40px;
+}
+
+#botones {
+    text-align: center;
+}
+
+#btnDolar, #btnEuro {
+    background-color: #4A5ADD;
+    color: #BFC9CA;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+
+    border: 0;
+}
+
+nav a.hover {
+    color: #4A5ADD;
+}
+
+.footer {
+    align-items: center;
 }

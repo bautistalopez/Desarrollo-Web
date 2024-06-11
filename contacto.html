@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="contacto.js"></script>
     <title>UrbaHome</title>
 </head>
 <body>
-    <header>
+    <header>  
         <div class="logo">
             <a href="index.html"><img src="Imagenes/Urbahome.png" alt="Logo de UrbaHome"></a>
         </div>
@@ -24,30 +26,42 @@
         </nav>
     </header>
     <br>
-    <form class="formTitulo">
-        <h2>Contacto</h2>
-        <div class="formulario">
-            <input type="text" name="name" placeholder="NOMBRE">
-
-            <input type="text" name="last_name" placeholder="APELLIDO">
-
-            <input type="tel" name="phone" placeholder="TELEFONO">
-
-            <input type="email" name="email" placeholder="EMAIL">
-
-            <textarea name="message" id="" cols="30" rows="10" placeholder="MENSAJE"></textarea>
-
-            <input class="boton" type="submit" value="Enviar">
+    
+        <form class="formTitulo">
+            <h2>Contacto</h2>
+            <div class="fondoContacto">
+            <div class="formulario" id="contactForm">
+                <input type="text" name="name"  id="name" placeholder="Nombre">
+    
+                <input type="text" name="last_name"  id = "last_name" placeholder="Apellido">
+    
+                <input type="tel" name="phone" id = "tel" placeholder="Telefono">
+    
+                <input type="email" name="email" id = "email" placeholder="Email">
+    
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+    
+                <input class="boton" type="submit"  id="boton"  onclick="enviarFormulario()" value="Enviar" >
+            </div>
         </div>
-        <br>
-    </form>
+            <br>
+        </form>
+    </div>
+    
     <br>
     <footer class="footer">
+        <div>
+            <p>Copyright UrbaHome 2024</p>
+            <a class="left" href="https://www.instagram.com/">Instagram</a>
+            <a class="left" href="mailto:urbahome@gmail.com">Contáctenos</a>
+        </div>
         <section>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="mailto:urbahome@gmail.com">Contactenos</a>
+            
         </section>
-        <p>Copyright 2024</p>
+        <div>
+            <p>Lima 757 - Ciudad Autónoma de Buenos Aires</p>
+            <p>(+54) 9 11 4567-3256</p>
+        </div>
     </footer>
 </body>
 </html>
